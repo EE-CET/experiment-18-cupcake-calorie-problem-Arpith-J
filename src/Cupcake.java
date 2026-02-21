@@ -26,7 +26,7 @@ public class Cupcake {
         public static long miles(int[] arr){
                 long m = 0;
                 for(int j=0; j<arr.length; j++){
-                        m += arr[j] * 2^j;
+                        m += arr[j] * (long)Math.pow(2,j);
                 }
                 return m;
         }
@@ -41,4 +41,4 @@ public class Cupcake {
                 arrSort(arr);
                 System.out.println(miles(arr));
         }
-}       
+}               
